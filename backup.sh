@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 now=$(date +"%m-%d-%Y")
-webhook="NULL"
+
 
 # Sending Stopping notification
-message1 = "Valheim Server stopping in 5 minutes."
-message2 = "Valheim Server has been restarted."
-/home/ubuntu/Scripts/BashDiscord/discord.sh --webhook-url=$webhook --username "Odin" --text $message1
+message1= "Valheim Server stopping in 5 minutes."
+message2= "Valheim Server has been restarted."
+/home/ubuntu/Scripts/BashDiscord/discord.sh --text $message1
 
 sleep 5m
 
@@ -22,4 +22,4 @@ cp /home/steam/.config/unity3d/IronGate/Valheim/worlds/Charlie.fwl /home/steam/W
 systemctl start valheimserver.service
 
 sleep 5m
-/home/ubuntu/Scripts/BashDiscord/discord.sh --webhook-url=$webhook --username "Odin" --text $message2
+/home/ubuntu/Scripts/BashDiscord/discord.sh --text $message2
