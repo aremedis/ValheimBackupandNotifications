@@ -3,7 +3,7 @@ now=$(date +"%m-%d-%Y")
 
 
 # Sending Stopping notification
-message1= "Valheim Server stopping in 5 minutes."
+message1= "@everyone Valheim Server stopping in 5 minutes."
 message2= "Valheim Server has been restarted."
 /home/ubuntu/Scripts/BashDiscord/discord.sh --text $message1
 
