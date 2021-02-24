@@ -3,9 +3,8 @@ now=$(date +"%m-%d-%Y")
 
 
 # Sending Stopping notification
-message1= "@everyone Valheim Server stopping in 5 minutes."
-message2= "Valheim Server has been restarted."
-/home/ubuntu/Scripts/BashDiscord/discord.sh --text $message1
+
+/home/ubuntu/Scripts/BashDiscord/discord.sh --text "@everyone Valheim Server stopping in 5 minutes."
 
 sleep 5m
 
@@ -22,4 +21,4 @@ cp /home/steam/.config/unity3d/IronGate/Valheim/worlds/Charlie.fwl /home/steam/W
 systemctl start valheimserver.service
 
 sleep 5m
-/home/ubuntu/Scripts/BashDiscord/discord.sh --text $message2
+/home/ubuntu/Scripts/BashDiscord/discord.sh --text "Valheim Server has been restarted."
