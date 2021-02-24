@@ -8,6 +8,8 @@ now=$(date +"%m-%d-%Y")
 
 sleep 5m
 
+/home/ubuntu/Scripts/BashDiscord/discord.sh --text "Restarting Now"
+
 # Stop the Service
 systemctl stop valheimserver.service
 
@@ -20,5 +22,5 @@ cp /home/steam/.config/unity3d/IronGate/Valheim/worlds/Charlie.fwl /home/steam/W
 # Start the Service
 systemctl start valheimserver.service
 
-sleep 5m
+sleep 30s
 /home/ubuntu/Scripts/BashDiscord/discord.sh --text "Valheim Server has been restarted."
